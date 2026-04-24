@@ -1,0 +1,62 @@
+﻿@page
+@model Ware_HW3.Pages.Products.ProductDetailsModel
+
+<div class="row justify-content-center">
+	
+	<div class="card column-md-8 p-3 shadow">
+		<div class="text-center">
+			<img class="card-img-top" src="~/images/@Model.product.prodimage" style="width:400px" />
+		</div>
+
+		<h1>
+			@Model.product.ProductName
+
+		</h1>
+
+		<p>
+			Code: @Model.product.ProductCode
+		</p>
+
+		<p>
+			Description: @Model.product.Description
+		</p>
+
+		<p>
+			List Price: $@Model.product.ListPrice
+		</p>
+
+		<p>
+			Standard Cost: @Model.product.StandardCost
+		</p>
+
+		<p>
+			Reorder Level: @Model.product.ReorderLevel
+		</p>
+
+		<p>
+			Target Level: @Model.product.TargetLevel
+		</p>
+
+		<p>
+			Discontinued: @Model.product.Discontinued
+		</p>
+
+		<p>
+			SupplierID: @Model.product.SupplierID
+		</p>
+
+		<p>
+			Available Quantity: @Model.product.AvailableQty
+		</p>
+
+		<p>
+			Reordered: @Model.product.Reordered
+		</p>
+
+
+	</div>
+
+
+
+</div>
+

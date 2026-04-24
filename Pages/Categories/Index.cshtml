@@ -1,0 +1,28 @@
+﻿@page
+@model Ware_HW3.Pages.Categories.IndexModel
+
+
+<h1>Categories</h1>
+
+<div class="row">
+
+	@foreach (var category in Model.CategoryList)
+	{
+		<div class="col-md-3 mb-3">
+			<div class="card">
+				
+				<div class="card-body">
+					<h5 class="card-title">@category.CategoryName</h5>
+
+					<a asp-page="/Products/Index" asp-route-categoryID="@category.CategoryID" class="btn btn-primary">View Products</a>
+
+				</div>
+
+
+			</div>
+
+		</div>
+	}
+
+
+</div>
